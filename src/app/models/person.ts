@@ -1,12 +1,12 @@
 export class Person {
   id?: number;
-  orgId?: number;
-  extPersonId = "";
+  organizationId?: number;
+  externalPersonId = "";
   suffix = "";
   firstName = "";
   middle = "";
   lastName = "";
-  // organization?: [];
-  // emails?: [];
-  // phones?: [];
+  // organization?: {};
+  // personEmails?: [];
+  // personPhones?: [];
 }

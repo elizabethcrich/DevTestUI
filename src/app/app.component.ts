@@ -14,7 +14,15 @@ export class AppComponent {
   constructor(private personService: PersonService) {}
 
   ngOnInit() : void {
-    this.people = this.personService.getPeople();
-    console.log(this.people);
+    this.personService.getPeople()
+      .subscribe({
+        next: (result) => {
+          this.people = result;
+          console.log(this.people);
+        },
+        error: (response) => {
+          console.log(response);
+        }
+      })
   }
 }

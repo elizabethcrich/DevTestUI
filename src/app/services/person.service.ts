@@ -1,4 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs/internal/Observable';
+import { environment } from 'src/environments/environment';
 import { Person } from '../models/person';
 
 @Injectable({
@@ -8,16 +11,9 @@ export class PersonService {
 
   private route = "People";
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
-  public getPeople() : Person[] {
-    let person = new Person();
-    person.id = 1;
-    person.orgId = 1;
-    person.extPersonId = "123456";
-    person.firstName = "Liz";
-    person.lastName = "Crich";
-
-    return [person];
+  public getPeople() : Observable<Person[]> {
+    return this.http.get<Person[]>(`${environment.apiUrl}/${this.route}`);
   }
 }
