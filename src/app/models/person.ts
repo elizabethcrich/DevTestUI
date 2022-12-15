@@ -6,7 +6,7 @@ export class Person {
   firstName = "";
   middle = "";
   lastName = "";
-  // organization?: {};
-  // personEmails?: [];
-  // personPhones?: [];
+  organization?: {};
+  personEmails?: [];
+  personPhones?: [];
 }

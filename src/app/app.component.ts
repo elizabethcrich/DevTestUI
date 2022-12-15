@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { Person } from './models/person';
-import { PersonService } from './services/person.service';
 
 @Component({
   selector: 'app-root',
@@ -9,20 +7,9 @@ import { PersonService } from './services/person.service';
 })
 export class AppComponent {
   title = 'DevTestUI';
-  people: Person[] = [];
 
-  constructor(private personService: PersonService) {}
+  constructor() { }
 
   ngOnInit() : void {
-    this.personService.getPeople()
-      .subscribe({
-        next: (result) => {
-          this.people = result;
-          console.log(this.people);
-        },
-        error: (response) => {
-          console.log(response);
-        }
-      })
   }
 }

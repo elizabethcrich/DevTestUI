@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">DevTest</a>
+  <a class="navbar-brand" routerLink="">DevTest</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -7,42 +7,13 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" routerLink="">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">People</a>
+        <a class="nav-link" routerLink="people">People</a>
       </li>
     </ul>
   </div>
 </nav>
 
-<div class="container my-5">
-  <h1 class="mb-3">People</h1>
-
-  <table class="table">
-    <thead>
-      <tr>
-        <th>ID</th>
-        <th>Organization ID</th>
-        <th>External Person ID</th>
-        <th>Suffix</th>
-        <th>First Name</th>
-        <th>Middle</th>
-        <th>Last Name</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let person of people">
-        <td>{{ person.id }}</td>
-        <td>{{ person.organizationId }}</td>
-        <td>{{ person.externalPersonId}}</td>
-        <td>{{ person.suffix }}</td>
-        <td>{{ person.firstName }}</td>
-        <td>{{ person.middle }}</td>
-        <td>{{ person.lastName }}</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-<!-- <router-outlet></router-outlet> -->
+<router-outlet></router-outlet>
