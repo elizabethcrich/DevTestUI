@@ -1,28 +1,3 @@
 <div class="container my-5">
-  <h1 class="mb-3">All People</h1>
-
-  <table class="table" *ngIf="people && people.length > 0">
-    <thead>
-      <tr>
-        <th>ID</th>
-        <th>Organization ID</th>
-        <th>External Person ID</th>
-        <th>Suffix</th>
-        <th>First Name</th>
-        <th>Middle</th>
-        <th>Last Name</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let person of people">
-        <td>{{ person.id }}</td>
-        <td>{{ person.organizationId }}</td>
-        <td>{{ person.externalPersonId}}</td>
-        <td>{{ person.suffix }}</td>
-        <td>{{ person.firstName }}</td>
-        <td>{{ person.middle }}</td>
-        <td>{{ person.lastName }}</td>
-      </tr>
-    </tbody>
-  </table>
+  <app-people-table [people]="people"></app-people-table>
 </div>

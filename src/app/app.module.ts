@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { PeopleOrgComponent } from './components/people/people-org/people-org.component';
 import { PeopleSearchComponent } from './components/people/people-search/people-search.component';
 import { PeopleListComponent } from './components/people/people-list/people-list.component';
+import { PeopleTableComponent } from './components/people/people-table/people-table.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PeopleListComponent,
     PeopleOrgComponent,
-    PeopleSearchComponent
+    PeopleSearchComponent,
+    PeopleTableComponent
   ],
   imports: [
     BrowserModule,

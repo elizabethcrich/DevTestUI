@@ -1,3 +1,6 @@
+import { Email } from "./email";
+import { Phone } from "./phone";
+
 export class Person {
   id?: number;
   organizationId?: number;
@@ -7,6 +10,6 @@ export class Person {
   middle = "";
   lastName = "";
   organization?: {};
-  personEmails?: [];
-  personPhones?: [];
+  personEmails?: Email[];
+  personPhones?: Phone[];
 }
