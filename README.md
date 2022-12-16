@@ -1,3 +1,10 @@
+# Todo
+
+- Move GetOrganizations into OrganizationService
+- Update Select Organization to select list
+- Test People Search to using array filter & see if performance is improved
+- Create reusable people-table component
+
 # DevTestUI
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.

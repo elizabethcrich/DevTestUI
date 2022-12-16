@@ -1,0 +1,61 @@
+<div class="container my-5">
+
+  <h2>Person Search</h2>
+    
+    <div class="form-group">
+      <label for="organizationId">Organization ID</label>
+      <input type="text" class="form-control" id="organizationId" [(ngModel)]="organizationId" required="true">
+    </div>
+    <div class="form-group">
+      <label for="externalPersonId">External Person ID</label>
+      <input type="text" class="form-control" id="externalPersonId" [(ngModel)]="externalPersonId">
+    </div>
+    <div class="form-group">
+      <label for="firstName">First Name</label>
+      <input type="text" class="form-control" id="firstName" [(ngModel)]="firstName">
+    </div>
+    <div class="form-group">
+      <label for="lastName">Last Name</label>
+      <input type="text" class="form-control" id="lastName" [(ngModel)]="lastName">
+    </div>
+    <div class="form-group">
+      <label for="personEmail">Email Address</label>
+      <input type="email" class="form-control" id="personEmail" [(ngModel)]="personEmail">
+    </div>
+    <div class="form-group">
+      <label for="personPhone">Phone Number</label>
+      <input type="text" class="form-control" id="personPhone" [(ngModel)]="personPhone">
+    </div>
+    
+    <button class="btn btn-primary" (click)="searchPeople(organizationId, externalPersonId, firstName, lastName, personEmail, personPhone)">Submit</button>
+
+  <div *ngIf="people && people.length > 0">
+    <h1 class="mt-5 mb-3">People</h1>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Organization ID</th>
+          <th>External Person ID</th>
+          <th>Suffix</th>
+          <th>First Name</th>
+          <th>Middle</th>
+          <th>Last Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let person of people">
+          <td>{{ person.id }}</td>
+          <td>{{ person.organizationId }}</td>
+          <td>{{ person.externalPersonId}}</td>
+          <td>{{ person.suffix }}</td>
+          <td>{{ person.firstName }}</td>
+          <td>{{ person.middle }}</td>
+          <td>{{ person.lastName }}</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+</div>
