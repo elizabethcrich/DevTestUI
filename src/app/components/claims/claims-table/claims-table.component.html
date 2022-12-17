@@ -1,0 +1,16 @@
+<div *ngIf="claims && claims.length > 0">
+  <h1 class="mt-5 mb-3">Claims ({{claims.length}})</h1>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>claim data</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let claim of claims">
+        <td>{{claim | json}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

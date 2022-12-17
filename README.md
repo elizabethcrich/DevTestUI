@@ -2,8 +2,10 @@
 
 - Move GetOrganizations into OrganizationService
 - Update Select Organization to select list
-- Test People Search to using array filter & see if performance is improved
-- Create reusable people-table component
+- Test People Search performance searching in UI vs server call
+- Rename claims-person to claims-search
+- Build table columns for claim data
+- Show error when required field is null
 
 # DevTestUI
 

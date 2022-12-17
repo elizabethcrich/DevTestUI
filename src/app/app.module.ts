@@ -9,6 +9,8 @@ import { PeopleOrgComponent } from './components/people/people-org/people-org.co
 import { PeopleSearchComponent } from './components/people/people-search/people-search.component';
 import { PeopleListComponent } from './components/people/people-list/people-list.component';
 import { PeopleTableComponent } from './components/people/people-table/people-table.component';
+import { ClaimsPersonComponent } from './components/claims/claims-person/claims-person.component';
+import { ClaimsTableComponent } from './components/claims/claims-table/claims-table.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { PeopleTableComponent } from './components/people/people-table/people-ta
     PeopleListComponent,
     PeopleOrgComponent,
     PeopleSearchComponent,
-    PeopleTableComponent
+    PeopleTableComponent,
+    ClaimsPersonComponent,
+    ClaimsTableComponent
   ],
   imports: [
     BrowserModule,
