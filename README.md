@@ -1,11 +1,12 @@
 # Todo
 
 - Move GetOrganizations into OrganizationService
-- Update Select Organization to select list
-- Test People Search performance searching in UI vs server call
+- Update Select Organization to select list (or any better UI)
+- Test People Search performance searching cached people vs server call
 - Rename claims-person to claims-search
 - Build table columns for claim data
-- Show error when required field is null
+- Show form error when required field is null
+- Add authentication
 
 # DevTestUI
 
