@@ -4,6 +4,7 @@
 - Update Select Organization to select list (or any better UI)
 - Test People Search performance searching cached people vs server call
 - Rename claims-person to claims-search
+- Build models for claim data including ClaimFkcode & Fkcode
 - Build table columns for claim data
 - Show form error when required field is null
 - Add authentication
